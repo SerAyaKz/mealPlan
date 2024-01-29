@@ -1,0 +1,152 @@
+.template {
+  font-size: 96px;
+  line-height: 100px;
+  letter-spacing: 5px;
+  color: #0f051d;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, #00f57d 2%, #00b0cb 80%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 6px transparent;
+}
+
+/* Watch Now Button */
+.Watch-Now-Btn {
+  margin-top: 50px;
+  width: 227px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 17px;
+  color: white;
+  border-radius: 26px;
+  background: linear-gradient(93deg, #00fd74 1.34%, #00adcf 98.8%);
+}
+
+/* Images */
+.abstractCircle {
+  background-image: url("../../assets/abstractCircle.svg");
+  background-repeat: no-repeat;
+  width: 865px;
+  height: 865px;
+  display: flex;
+  background-size: cover;
+  animation-name: abstractCircle;
+  animation-duration: 59s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes abstractCircle {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.dotedCircle {
+  background-image: url("../../assets/dotedCircle.svg");
+  background-repeat: no-repeat;
+  width: 759px;
+  height: 759px;
+  background-size: cover;
+  position: absolute;
+  animation-name: dotedCircle;
+  animation-duration: 59s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes dotedCircle {
+  from {
+    transform: rotate(-360deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cup {
+
+  width: 856px;
+  height: 892px;
+  position: absolute;
+}
+
+/* Floating Animation Start */
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+
+#text-behind,
+#text-front,
+#text-behind-blur {
+  position: absolute;
+  text-align: center;
+
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  line-height: 0.8;
+}
+
+#text-behind {
+  color: #000;
+  z-index: 1;
+}
+
+#text-behind-blur {
+  color: #000;
+  filter: blur(7.5px);
+  -webkit-filter: blur(7.5px);
+  z-index: 0;
+}
+
+#text-front {
+  /*  Set text-color to transparent to only show the outline  */
+  color: transparent;
+  text-stroke: 2px #000;
+  -webkit-text-stroke: 2px #000;
+  z-index: 3;
+}
+
+/* Tailwind CSS Customizations */
+.bg-firewatch-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Gives a frosted glass effect */
+}
+
+.from-firewatch-purple {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(128, 90, 213));
+}
+
+.to-firewatch-orange {
+  --tw-gradient-to: rgb(255, 165, 0);
+}
+
+.shadow-firewatch {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
