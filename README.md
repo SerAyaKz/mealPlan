@@ -1,4 +1,4 @@
-# [Meal Plan pet app + 3d](https://meal-plan-ruddy.vercel.app/)
+# [Meal Plan Pet app + Firebase + 3D Object](https://meal-plan-ruddy.vercel.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
